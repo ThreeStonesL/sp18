@@ -38,7 +38,7 @@ public class NBody {
         for (Planet planet : planets)
             planet.draw();
         StdDraw.show();
-        for(double time = 0; time < T; time += dt){
+        for(double time = 0; time <= T; time += dt){
             int num = planets.length;
             double[] xForces=new double[num], yForces=new double[num];
             for(int i = 0; i < num; i ++){
