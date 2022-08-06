@@ -14,12 +14,12 @@ public class ArrayDeque<T> {
 
     private void resizeLarger() {
         T[] newItems = (T[]) new Object[size * 2];
-        size = size * 2;
         int i;
         for (i = 0; start != end; i ++){
             newItems[i] = items[start];
             start = getNext(start);
         }
+        size = size * 2;
         start = 0;
         end = i;
         items = newItems;
@@ -29,12 +29,12 @@ public class ArrayDeque<T> {
         if (size == 8)
             return;
         T[] newItems = (T[]) new Object[size / 2];
-        size = size / 2;
         int i;
         for (i = 0; start != end; i ++){
             newItems[i] = items[start];
             start = getNext(start);
         }
+        size = size / 2;
         start = 0;
         end = i;
         items = newItems;

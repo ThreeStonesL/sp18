@@ -83,8 +83,8 @@ public class ArrayDequeTest {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("Running tests.\n");
-		addIsEmptySizeTest();
-		addRemoveTest();
+		ArrayDeque<Integer> queue = new ArrayDeque<Integer>();
+		queue.addFirst(0);
+		System.out.println(queue.get(0));
 	}
 } 
