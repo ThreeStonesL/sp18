@@ -1,5 +1,6 @@
 public class ArrayDeque<T> {
-    private int start=0, end=0;
+    private int start=0;
+    private int end=0;
     private int size = 8;
     private T[] items = (T[])new Object[8];
 
@@ -43,14 +44,14 @@ public class ArrayDeque<T> {
     public void addFirst(T item) {
         start = getPrev(start);
         items[start] = item;
-        if (size() == size)
+        if (size() == size - 1)
             resizeLarger();
     }
 
     public void addLast(T item) {
         items[end] = item;
         end = getNext(end);
-        if (size() == size)
+        if (size() == size - 1)
             resizeLarger();
     }
 

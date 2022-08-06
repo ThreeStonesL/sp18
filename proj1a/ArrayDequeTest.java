@@ -84,7 +84,9 @@ public class ArrayDequeTest {
 
 	public static void main(String[] args) {
 		ArrayDeque<Integer> queue = new ArrayDeque<Integer>();
-		queue.addFirst(0);
+		for(int i = 0; i <= 6 ; i ++)
+			queue.addFirst(i);
+		queue.addFirst(7);
 		System.out.println(queue.get(0));
 	}
 } 
