@@ -3,7 +3,7 @@ public class LinkedListDeque<T> {
     private int size=0;
 
     /** represent the node of LinkedListDeque */
-    public class Node {
+    private class Node {
         public Node font=null, rear=null;
         public T item;
 
