@@ -37,7 +37,7 @@ public class TETile {
      * @param filepath Full path to image to be used for this tile. Must be correct size (16x16)
      */
     public TETile(char character, Color textColor, Color backgroundColor, String description,
-                  String filepath) {
+                    String filepath) {
         this.character = character;
         this.textColor = textColor;
         this.backgroundColor = backgroundColor;
